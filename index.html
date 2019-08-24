@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c8e45b6da6ca80012e29a9c&product=sticky-share-buttons"></script>
+  <meta name="google-site-verification" content="nZDRUiniuPy57f2k6rfzYAvfuqM6v5Zt9SGCFFI24J4"/>
   <meta charset="utf-8">
-  <title>Canon Website</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Canon Innovations Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content="" name="keywords">
   <meta content="" name="description">
-
+  
   <!-- Favicons -->
   
-  <link href="img/canon.jpg" rel="icon">
+  <link href="img/canon.jpg" width="100%" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
@@ -26,48 +28,97 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+<style type="text/css">
 
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
 </head>
 
-<body>
+<body class="container-fluid">
 
   <!--==========================
   Header
   ============================-->
+  
   <header id="header" class="fixed-top">
     <div class="container">
-
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-         <h2 class="text-light"><a href="#header"><span>Canon Innovations</span></a></h2> 
-        
+         <img src="img/logo.jpg" alt="" class="img-fluid">
       </div>
-
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
+           <li> 
+           	<div class="dropdown">
+				<button class="dropbtn">Services</button>
+ 				 <div class="dropdown-content">
+  				  	<a href="#Software">Software Development</a>
+			  		<a href="#Honey">Honey Exportation</a>
+			  		<a href="#Supply">General Supplies</a>
+			  		<a href="#Car">Car Services</a>
+			   </div>
+			</div>
+		   </li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact Us</a></li>
+          <button class="btn btn-info rounded"><li ><a href="http://cims.canoninnovationsltd.com" target="_new">Canon Inventory System</a></li></button>
         </ul>
       </nav><!-- .main-nav -->
-      
     </div>
   </header><!-- #header -->
 
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro" class="clearfix">
+  <section id="intro" class="clearfix" style="background-color: #800080">
     <div class="container">
-      
       <div class="intro-img">
         <img src="img/canon.jpg" alt="" height="60%" class="img-fluid">
       </div>
-
-      <div class="intro-info text-white">
+      <div class="intro-info text-white" >
         <h4><b>We are more than conviced that every one needs<br><span>a business partner reliable and trusted every day to be part of their journey</span><br>that's why Canon Innovations Ltd is in place</b></h4>
         <div>
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -85,8 +136,6 @@
     ============================-->
     <section id="about">
       <div class="container">
-        
-        
           <header class="section-header">
           <h3>About Us</h3>
           <p  style="font-size: 170%;"class="text-secondary"><i class="fa fa-quote-left"> At Canon Innovations Ltd, We only promise what we can Deliver, and then deliver more than we promised <i class="fa fa-quote-right"></i></i></p>
@@ -98,7 +147,7 @@
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-bookmark"></i></div>
               <h4 class="title"><a href="">GET TO KNOW US</a></h4>
-             <p style="font-size: 95%;" class="description">
+             <p class="lead">
            A team of experienced young men and women in Kampala Uganda ready to work and to accomplish more in life. Our work is preferably the best in business and our services are impeccable; Second to none. We are more committed to continuous advancement in our intellect and expertize and thus achieving our success through the pursuit of elevated performance and quality at all times
              </p>
             </div>
@@ -106,20 +155,20 @@
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-suitcase"></i></div>
               <h4 class="title"><a href="">MISSION</a></h4>
-              <p style="font-size: 95%;"class="description">Our mission is to build a trustworthy and profitable IT Services Provider developing the next generation of complex software intensive systems for our clients</p>
+              <p class="lead">Our mission is to build a trustworthy and profitable IT Services Provider developing the next generation of complex software intensive systems for our clients</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fa fa-calendar-check-o"></i></div>
               <h4 class="title"><a href="">CORE VALUES</a></h4>
-              <p style="font-size: 90%" class="description">Quality | Creativity | Innovation
+              <p class="lead">Quality | Creativity | Innovation
               |Technology | Customer Satisfaction</p>
             </div>
 
           </div>
 
           <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
-            <img src="img/about1.jpg" alt=""  class="img-responsive">
+            <img src="img/about.jpg"   class="img-fluid">
           </div>
         </div>
 
@@ -129,7 +178,7 @@
           </div>
           <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
             <h4 class="title"><a href="">OUR CUSTOMER CARE AND RESPONSE TO THEIR QUERIES MAKE US OUTSTANDING</a></h4>
-            <p style="font-size: 90%" class="description">
+            <p class="lead">
               We not only take care about the quality of our products that we offer but also about our esteemed customers. At Canon Innovations we take time to ensure that ourcustomer is given a product or service that is outstanding.<br> We also ensure that the customer is fully inducted about the operations of the product or service.<br> We also take into account creating referrals by making ourselves available for customer questions, repairs or other concerns and making replacements where its necessary.
             </p>
           </div>
@@ -144,21 +193,26 @@
           <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <h4 class="title"><a href="">ABOUT WHAT WE OFFER AT CANON INNOVATIONS LTD</a></h4>
-               <p style="font-size: 90%" class="description">
+               <p  class="lead">
                 <div class="icon"><i class="fa fa-laptop"></i><h5 class="title"><a href="#Software">Software Development</a></h5>
                   We provide our clients with web app development, Mobile App Development, Database Development, IT training, Project planning and management using updated tools.</div></p>
-                  <p style="font-size: 90%" class="description">
+
+					<div class="icon">
+						<i class="fa fa-diamond"></i><h5 class="title"><a href="#Honey">Honey Exportation</a></h5>
+                       We are reliable exporters of honey through liasing with the producers, we export quality and healthy honey to outside countries.
+                    </div></p>
+
+                  <p  class="lead">
                    <div class="icon"><i class="fa fa-institution"></i><h5 class="title"> <a href="#Supply">General Supply</a></h5>
                      We save you the hustle of acquiring the right goods or items fro your company. We supply services like Calenadrs, Seasons greetings cards, Newsletters, Annual Reports, diaries, Brochures, Letter Heads and data tool books etc.
                      </div></p>
-                     <div class="icon"><i class="fa fa-car"></i><h5 class="title"> <a href="#Car">Car Rental</a></h5>
-                      We provide our clients with web app development, Mobile App Development, Database Development, IT training, Project planning and management using updated tools.</div>
-              
+                   <div class="icon"><i class="fa fa-car"></i><h5 class="title"> <a href="#Car">    Car Rental</a></h5>
+                      We provide our clients with web app development, Mobile App Development, Database Development, IT training, Project planning and management using updated tools.
+                  </div>
           </div>
-          
         </div>
-
-      </div>
+    </div>
+    </div>
     </section><!-- #about -->
 
     <!--==========================
@@ -169,107 +223,143 @@
 
         <header class="section-header">
           <h3>Services</h3>
-          <p style="font-size: 150%;"class="text-secondary"><i class="fa fa-shopping-bag"> ...At Canon Innovations Ltd, We believe that our job is to listen, research and understand the requirements unique to each individual business. In fact, it is the long-term relationships with our clients that has served as a solid foundation for our company...<i class="fa fa-shopping-cart"></i></i></p>
+          <p style ="font-size: 170%"class="lead"><i class="fa fa-shopping-bag"> ...At Canon Innovations Ltd, We believe that our job is to listen, research and understand the requirements unique to each individual business. In fact, it is the long-term relationships with our clients that has served as a solid foundation for our company...<i class="fa fa-shopping-cart"></i></i></p>
         </header>
-      <section id="Software" class="section-bg" style="color: #99235C;">
-       <div class="container"><br><br><br>
-          <h4>1. Software Development</h4>
+        <br><br><br>
+      <section id="Software" class="section-bg">
+       <div class="container">
+          <h2>1. Software Development</h2>
         <div class="row">
-          <div  class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+          <div  class=" col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon" ><i class="fa fa-star" style="color: #ff689b;"></i></div>
               <h4 class="title"><a href="">Key Factors</a></h4>
-              <p class="description">Processes, tools, technologies expert, Active customer participation Respondent to changes, No compromisation in quality. Close collaboration and transparency Robust development cycle ensuring budgets and timelines</p>
+              <img src="img/key.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+              <p class="lead">Processes, tools, technologies expert, Active customer participation Respondent to changes, No compromisation in quality. Close collaboration and transparency Robust development cycle ensuring budgets and timelines</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+          <div class=" col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon"><i class="fa fa-gears" style="color: #e9bf06;"></i></div>
               <h4 class="title"><a href="">Extensible</a></h4>
-              <p class="description">The developed system fully satisfies customer requirements. We develop the system using loose coupled modules which enable us to adapt to the change faster. It gives us wide set of abilities for broadening the system functions in the future.</p>
+              <img src="img/extend.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+              <p class="lead">The developed system fully satisfies customer requirements. We develop the system using loose coupled modules which enable us to adapt to the change faster. It gives us wide set of abilities for broadening the system functions in the future.</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="col-md-6 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon"><i class="fa fa-laptop" style="color: #3fcdc7;"></i></div>
               <h4 class="title"><a href="">Systems</a></h4>
-              <p class="description">Canon Innovations is a competent provider of any kind of software solutions including mission critical business applications, complex engineering software, datacentric analytical, smart device solutions, web solutions and so on....</p>
+              <img src="img/system.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+              <p class="lead">Canon Innovations is a competent provider of any kind of software solutions including mission critical business applications, complex engineering software, datacentric analytical, smart device solutions, web solutions and so on....</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon"><i class="fa fa-shopping-cart" style="color: #3fcdc7;"></i></div>
               <h4 class="title"><a href="">Market Focused</a></h4>
-              <p class="description">Starting from planning entire operations, our software will successfully lead you to your ultimate objective. While developing software products we use modern, well, and technologies in pro</p>
+              <img src="img/market.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+              <p class="lead">Starting from planning entire operations, our software will successfully lead you to your ultimate objective. While developing software products we use modern, well, and technologies in pro</p>
             </div>
           </div>
 
         </div>
       </div>
     </section>
-
-
-<section id="Supply" class="section-bg" style="color: #99235C;">
-       <div class="container"><br><br><br>
-          <h4>2. General Supply</h4>
+     <br><br><br>
+       <section id="Honey" class="section-bg">
+       <div class="container">
+          <h2>2. Natural Honey Exportation</h2>
         <div class="row">
-          <div  class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+          
+          <div  class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Extraction</a></h4>
+              <img src="img/pure-honey.png" class="img-fluid rounded mx-auto d-block" alt="">
+              <p class="lead">Our honey is taken straight from the beehives, collected by our apiarist from Uganda's virgin forest floras and 100% Natural.<br> <br>Our honey has not been genetically modified or processed in any way which helps to retain its active properties and natural nutrition to the highest level possible. The extraction process is typically done inside a specialized room with all of the necessary tools nearby and is washable</p>
+            </div>
+          </div>
+           <div class="col-md-6  wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Product Exportation</a></h4>
+              <img src="img/export-honey.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+              <p class="lead">Over time, our honey products have been exported to many different countries in the world because of the quality standards we attach to our honey products.<br>We follow all required steps from extraction up to packaging the honey for exportation<br>
+              Our customer care service help lines are always open to take in clients' enquiries about honey products genuine domestic retailers and oversea buyers<br>
+              We also hold the ability to meet continuous demand in season and off season which is an assurance to our clients.</p>
+
+            </div>
+          </div>
+          <div class=" wow bounceInUp" data-wow-duration="1.4s" >
+          	<div class="box">
+              <h4 class="title"><a href="">Usefulness of Bee Farming</a></h4>
+              
+                <img src="img/bees.jpg" class="img-fluid" width="100%">
+              <p class="lead">From our several Bee farms where we rear bees from, We collect and gather honey, sell bees, royal jelly, bees’ wax, propolis, pollen, bee venom and other bee products. <br>we also maintain hives for honey, Beeswax from cell caps and old combs is used for high-quality candles, pharmaceuticals, lotions, and friction-reducing waxes for skis and surfboards.<br> As well as honey, several other bee products are sources of food for humans. Bee brood (young bees that are housed in the brood comb of a hive) is consumed as a form of meat in many non-European countries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+
+   <section id="Supply" class="section-bg" style="font-size: 120%">
+       <div class="container">
+          <h2>3. General Supply</h2>
+        <div class="row">
+          <div  class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <h4 class="title"><a href="">Design and production of promotional Materials</a></h4>
-              <p class="description">We design and supply Pull up banners, tears drops, T-shirts, blouses, key holders, pens, wall clocks, stickers, mugs, umbrellas, mouse pads and badges, Wrist</p>
+              <p class="lead">We design and supply Pull up banners, tears drops, T-shirts, blouses, key holders, pens, wall clocks, stickers, mugs, umbrellas, mouse pads and badges, Wrist</p>
               <img src="img/supply1.jpg" class="img-fluid" alt="">
             </div>
           </div>
-          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <h4 class="title"><a href="">Supply of Protective Wear</a></h4>
-              <p class="description">These include Head gears, Safety Shoes, overcoats, overalls, gloves etc.</p>
+              <p class="lead">These include Head gears, Safety Shoes, overcoats, overalls, gloves etc.</p>
               <img src="img/supply2.jpg" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="col-md-6 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <h4 class="title"><a href="">Supply and Branding of Relief, non relief or emergency items</a></h4>
-              <p class="description">Among these these we supply Turplins, Matresses, Jericans, Mosquito nets, Basins, Buckets, etc</p>
+              <p class="lead">Among these these we supply Turplins, Matresses, Jericans, Mosquito nets, Basins, Buckets, etc</p>
                <img src="img/supply3.jpg" class="img-fluid" alt="">
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <h4 class="title"><a href="">Supply of Agricultural Products</a></h4>
-              <p class="description">These include Rice, Beans, Maize, flour, coffee beans and many others at relatively low prices</p>
-              <img src="img/supply4.jpg" class="img-fluid" alt="">
+              <p class="lead">These include Rice, Beans, Maize, flour, coffee beans and many others at relatively low prices</p>
+
+              <img src="img/supply4.jpg"   class="img-fluid">
+              
             </div>
           </div>
 
         </div>
       </div>
     </section>
-
-    <section id="Car" class="section-bg" style="color: #99235C;">
-       <div class="container"><br><br><br>
-          <h4>3. Car Rental or Hire</h4>
+    <br><br><br>
+    <section id="Car" class="section-bg" style="font-size: 120%">
+       <div class="container">
+          <h2>4. Car Rental or Hire</h2>
           <p class="lead">
             <b>With companies becoming busier each day, Transportation has become a challenge to the operations leading to enormous losses so Canon Innovations Ltd is here to help you avoid being a victim of these transportation losses</b>
           </p>
-          <i class="description">We are the leading transportation solution providers in Uganda</i>
         <div class="row">
-          <div  class="col-md-6 col-lg-12 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
+          <div class=" wow bounceInUp" data-wow-duration="1.4s" >
+          	<div class="box">
              
               <h4 class="title"><a href="">Variety of new cars</a></h4>
-              <p style="font-size: 120%" class="description">We have unbeatable selection of cars in the country, whether its a taxi, special hire, corporate rental or VIP transport. Our aim is to connect the dot for you with the latest a fleet, in good mechanical condition and experience chaffuer to guarantee a wonderful journey.</p>
+              <p class="lead">We have unbeatable selection of cars in the country, whether its a taxi, special hire, corporate rental or VIP transport. Our aim is to connect the dot for you with the latest a fleet, in good mechanical condition and experience chaffuer to guarantee a wonderful journey.</p>
                <img src="img/car1.jpg" class="img-fluid" width="100%">
             </div>
           </div>
           <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <h4 class="title"><a href="">Range Rover</a></h4>
-              <p class="description">
+              <p class="lead">
                 
               </p>
               <img src="img/range.png" class="img-fluid" width="100%">
@@ -279,7 +369,7 @@
           <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <h4 class="title"><a href="">BMW</a></h4>
-              <p class="description"></p>
+              <p class="lead"></p>
               <img src="img/bmw.jpg" class="img-fluid" width="100%">
             </div>
           </div>
@@ -288,7 +378,7 @@
             <div class="box">
               
               <h4 class="title"><a href="">Toyota</a></h4>
-              <p class="description"></p>
+              <p class="lead"></p>
               <img src="img/toyota.png" class="img-fluid" width="100%">
             </div>
           </div>
@@ -297,7 +387,7 @@
             <div class="box">
               
               <h4 class="title"><a href="">Benz</a></h4>
-              <p class="description"></p>
+              <p class="lead"></p>
               <img src="img/benz.jpg" class="img-fluid" width="100%">
             </div>
           </div>
@@ -316,7 +406,7 @@
       <div class="container">
         <header class="section-header">
           <h3>Why choose Canon Innovations Ltd?</h3>
-          <p>We offer quality and standard products and services to our clients at a very friendly price</p>
+          <p class="lead">We offer quality and standard products and services to our clients at a very friendly price</p>
         </header>
 
         <div class="row row-eq-height justify-content-center">
@@ -326,7 +416,7 @@
                 <i class="fa fa-diamond"></i>
               <div class="card-body">
                 <h5 class="card-title">Value vs Cost</h5>
-                <p class="card-text">Our products are of high quality to serve our esteemed customers to their satisifaction thus creating value for their money.</p>
+                <p class="lead card-text">Our products are of high quality to serve our esteemed customers to their satisifaction thus creating value for their money.</p>
                 <a href="#" class="readmore">Read more </a>
               </div>
             </div>
@@ -337,7 +427,7 @@
                 <i class="fa fa-language"></i>
               <div class="card-body">
                 <h5 class="card-title">Technologies Used</h5>
-                <p class="card-text">We develop software applications, systems and all tech driven web based applications using the most updated and efficient tools and algorithms</p>
+                <p class="lead card-text">We develop software applications, systems and all tech driven web based applications using the most updated and efficient tools and algorithms</p>
                 <a href="#" class="readmore">Read more </a>
               </div>
             </div>
@@ -348,7 +438,7 @@
                 <i class="fa fa-object-group"></i>
               <div class="card-body">
                 <h5 class="card-title">Our Customer Care</h5>
-                <p class="card-text">We have one of the best customer care services in Uganda, we listen to your query, respond to it and then follow up until our customer is fully satisfied with our services. </p>
+                <p class=" lead card-text">We have one of the best customer care services in Uganda, we listen to your query, respond to it and then follow up until our customer is fully satisfied with our services. </p>
                 <a href="#" class="readmore">Read more </a>
               </div>
             </div>
@@ -374,7 +464,7 @@
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">18</span>
+            <span data-toggle="counter-up">9</span>
             <p>Hard Workers</p>
           </div>
   
@@ -396,28 +486,31 @@
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Mobile Apps</li>
-              <li data-filter=".filter-card">General Supplies</li>
-              <li data-filter=".filter-web">Web Apps</li>
+              <li data-filter=".filter-app"class="filter-active" >Software</li>
+              <li data-filter=".filter-hon">Honey</li>
+              <li data-filter=".filter-card">Supplies</li>
+              <li data-filter=".filter-web">Cars</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+              <img src="img/soft1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+                <h4><a href="#">Systems</a></h4>
+                <p>School Management Systems</p>
               </div>
             </div>
+            <div class="portfolio-wrap">
+              <img src="img/soft2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="#">Mobile Apps</a></h4>
+                <p>Android | iOS | Windows</p>
+              </div>
+            </div>
+
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
@@ -434,7 +527,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-hon" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -553,30 +646,30 @@
             <div class="owl-carousel testimonials-carousel wow fadeInUp">
     
               <div class="testimonial-item">
-                <h3>Saul Goodman</h3>
+                <h3>Kato Godman</h3>
                 <h4>Ceo &amp; Founder</h4>
-                <p>Thank you So much canon
+                <p>Wonderful Services
                 </p>
               </div>
     
               <div class="testimonial-item">
-                <h3>Sara Wilsson</h3>
+                <h3>Okello Wilsson</h3>
                 <h4>Designer</h4>
-                <p>Thank you So much canon
+                <p>It was a pleasure doing business with canon
                 </p>
               </div>
     
               <div class="testimonial-item">
-                <h3>Jena Karlis</h3>
+                <h3>William Byarugaba</h3>
                 <h4>Store Owner</h4>
                 <p>Thank you So much canon
                 </p>
               </div>
     
               <div class="testimonial-item">
-                <h3>Matt Brandon</h3>
+                <h3>Mathew Waiswa</h3>
                 <h4>Freelancer</h4>
-                <p>Thank you So much canon
+                <p>Canon Delivers quality services to its clients.
                 </p>
               </div>
     
@@ -603,117 +696,147 @@
       <div class="container">
         <div class="section-header">
           <h3>Team</h3>
-          <p>At Canon we have an emphatic and hardworking staff</p>
+          <p class="lead">At Canon we have an emphatic and hardworking team that are well qualified to service the customers or the clients in the least time possible.<br> The team always delivers professional and standard services through mutual interactions with the customers to ensure that their needs are met.<br>
+          The following are the  young, professional, innovative and ambitious Ugandans that form the Staff Team at Canon Innovations Ltd: </p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-3 col-md-6 wow fadeInUp">
-            <div class="member">
-              <img src="img/pic.jpg" class="img-fluid" alt="">
+          	 <div class="member">
+              <img src="img/ronnie.jpg" class="img-fluid" alt="">
+                </div>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Ronnie</h4>
                   <span>Chief Executive Officer</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
+           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="img/bychance.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h5>Nelvin Musiime</h5>
+                  <h6>Accountant</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+           <div class="member">
+              <img src="img/coleb.jpg" class="img-fluid" alt="">
+             </div>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Katwesigye Coleb</h4>
+                  <span>Ass. Operations Manager</span>
+                  
+                </div>
+              </div>
+            </div>
+          
 
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="member">
-              <img src="img/pic.jpg" class="img-fluid" alt="">
+              <img src="img/pat.jpeg" class="img-fluid" alt="">
+          </div>
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Patrick</h4>
+                  <h4>Patrick Ainebyoona</h4>
                   <span>Product Manager</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/ainebyoona.patrick"><i class="fa fa-facebook"></i></a>|
+                    <a href=""><i class="fa fa-phone"></i>+256703245903</a>|
                   </div>
                 </div>
               </div>
-            </div>
           </div>
+           
+          
+        <div class='row'>
+          <div class='col-lg-8 col-lg-offset-2'>
+            <hr>
+          </div>
+        </div>
 
+           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/judith.jpg" class="img-fluid" alt="">
+            </div>  
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Judith Nassuna</h4>
+                  <span>Office Administrator</span>
+                
+                </div>
+              </div>
+            </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
-              <img src="img/pic.jpg" class="img-fluid" alt="">
+              <img src="img/katenda.jpg" class="img-fluid" alt="">
+              </div>
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Ennock, Innocent and Difas</h4>
-                  <span>CTO</span>
+                  <h4>Katenda Enock</h4>
+                  <span>Software Developer</span>
                   <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/katendaenock"><i class="fa fa-facebook"></i></a>|
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+           
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="member">
+              <img src="img/dihfahsih.jpg" class="img-fluid" alt="" >
+              </div>
+                <div class="member-info-content">
+                  <h4>Mugoya Dihfahsih</h4>
+                  <span>Software Developer</span>
+                 <!-- <div class="social">
+                    <a href="http://twitter.com/1Difas"><i class="fa fa-twitter"></i></a>|
+                    <a href="https://www.facebook.com/MugoyaDihfahsih"><i class="fa fa-facebook"></i></a>|
+                    <a href=""><i class="fa fa-phone"> +256751612792</i></a>|
+                    <a href="https://linkedin.com/in/dihfahsih-mugoya-135b94110/"><i class="fa fa-linkedin"></i></a>
+                  </div>-->
+              </div>
+            </div>  
+          
            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
-              <img src="img/pic.jpg" class="img-fluid" alt="">
+              <img src="img/i.jpg" class="img-fluid" alt="">
+              </div>
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Isaac</h4>
+                  <h4>Kaddu Innocent</h4>
+                  <span>Software Developer</span>
+                  <div class="social">
+                    <a href="https://www.facebook.com/Xcent333"><i class="fa fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-8 col-lg-offset-2'>
+              <hr>
+            </div>
+        </div>
+         <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/isaac.jpg" class="img-fluid" alt="">
+             </div>
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Isaac Akampulira</h4>
                   <span>Operations Manager</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="member">
-              <img src="img/pic.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Nelvin Bychance</h4>
-                  <span>Accountant</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="member">
-              <img src="img/pic.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Judith</h4>
-                  <span>Rceptionist</span>
-                  <div class="social">
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                    <a href=""><i class="fa fa-google-plus"></i></a>
-                    <a href=""><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
         </div>
 
@@ -831,17 +954,17 @@
 
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-md-5 info">
+              <div class="col-md-4 info">
                 <i class="ion-ios-location-outline"></i>
                 <p>254 Albert Cook Rd, Mengo Kampala Uganda</p>
               </div>
-              <div class="col-md-4 info">
+              <div class="col-md-6 info">
                 <i class="ion-ios-email-outline"></i>
                 <p>canoninnovationsltd@gmail.com</p>
               </div>
-              <div class="col-md-3 info">
+              <div class="col-md-4 info">
                 <i class="ion-ios-telephone-outline"></i>
-                <p>+256 703 245 903</p>
+                <p>+256 703245903</p>
               </div>
             </div>
 
@@ -909,7 +1032,7 @@
               254 Albert Cook Rd<br>
               Mengo, Kampala<br>
               Uganda <br>
-              <strong>Phone:</strong> +256 703 245 903<br>
+              <strong>Phone:</strong> +256703245903<br>
               <strong>Email:</strong> canoninnovationsltd@gmail.com<br>
             </p>
 
@@ -946,7 +1069,9 @@
     </div>
   </footer><!-- #footer -->
 
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</div>
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
